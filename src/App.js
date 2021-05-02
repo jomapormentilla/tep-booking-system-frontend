@@ -66,7 +66,7 @@ class App extends React.Component {
         <Router>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <CovidMessage />
-            <div style={{ display: 'flex' }}>
+            <div style={{ display: 'flex', marginTop: '10px' }}>
               <Nav navItems={ this.state.navItems } />
               <Route exact path="/" render={ routeInfo => <Home setActive={ this.setActive } navItems={ this.state.navItems } routeInfo={ routeInfo } /> } />
               <Route path="/abigails-playroom" render={ routeInfo => <AbigailContainer setActive={ this.setActive } navItems={ this.state.navItems } routeInfo={ routeInfo } /> } />
