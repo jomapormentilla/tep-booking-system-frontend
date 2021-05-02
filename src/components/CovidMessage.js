@@ -7,7 +7,7 @@ const style = {
     backgroundColor: '#2e457a',
     color: '#fff',
     padding: '10px',
-    width: '1110px'
+    width: '1080px'
 }
 
 const listItems = [
@@ -41,11 +41,11 @@ class CovidMessage extends React.Component {
                 </div>
                 
                 <div style={{ display: this.state.show ? 'block' : 'none', opacity: this.state.show ? '1' : '0', transitionDuration: '0.5s' }}>
-                    <p>We want you to feel safe throughout your entire escape room experience. Here are the steps we are taking to ensure your safety:</p>
+                    <p style={{ textAlign: 'center' }}>We want you to feel safe throughout your entire escape room experience. Here are the steps we are taking to ensure your safety:</p>
                         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
                             { this.renderList() }
                         </div>
-                    <p>We hope that our precautions will help you feel safe so that you can fully enjoy your escape room experience. We thank you for your cooperation and hope to see you soon!</p>
+                    <p style={{ textAlign: 'center' }}>We hope that our precautions will help you feel safe so that you can fully enjoy your escape room experience. We thank you for your cooperation and hope to see you soon!</p>
                 </div>
             </div>
         )

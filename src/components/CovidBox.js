@@ -1,8 +1,9 @@
 import React from 'react'
 
 const style = {
-    width: '150px',
-    fontSize: '13px',
+    flex: '1 0 30%',
+    minWidth: '150px',
+    fontSize: '15px',
     border: 'solid 1px #fff',
     borderRadius: '10px',
     padding: '10px',

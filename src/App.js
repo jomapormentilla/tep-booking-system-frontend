@@ -7,6 +7,7 @@ import Home from './components/Home'
 import AbigailContainer from './components/AbigailContainer'
 import EstateContainer from './components/EstateContainer'
 import FaqsContainer from './components/FaqsContainer'
+import Login from './components/Login'
 import CovidMessage from './components/CovidMessage'
 
 class App extends React.Component {
@@ -34,6 +35,12 @@ class App extends React.Component {
         id: 4,
         name: `FAQs`,
         url: `/faqs`,
+        active: false
+      },
+      {
+        id: 5,
+        name: `Login`,
+        url: `/login`,
         active: false
       }
     ]
@@ -72,6 +79,7 @@ class App extends React.Component {
               <Route path="/abigails-playroom" render={ routeInfo => <AbigailContainer setActive={ this.setActive } navItems={ this.state.navItems } routeInfo={ routeInfo } /> } />
               <Route path="/the-estate" render={ routeInfo => <EstateContainer setActive={ this.setActive } navItems={ this.state.navItems } routeInfo={ routeInfo } /> } />
               <Route path="/faqs" render={ routeInfo => <FaqsContainer setActive={ this.setActive } navItems={ this.state.navItems } routeInfo={ routeInfo } /> } />
+              <Route path="/login" render={ routeInfo => <Login setActive={ this.setActive } navItems={ this.state.navItems } routeInfo={ routeInfo } /> } />
             </div>
           </div>
         </Router>
