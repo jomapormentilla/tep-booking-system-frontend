@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Calendar from './calendar/Calendar'
+
 class AbigailContainer extends React.Component {
     componentDidMount(){
         let idx = this.props.navItems.findIndex(item => item.url === this.props.routeInfo.location.pathname)
@@ -27,10 +29,10 @@ class AbigailContainer extends React.Component {
                         <div>
                             <h1>Book Now</h1>
                             <div>
-                                
                             </div>
                         </div>
                     </div>
+                    <Calendar />
                 </div>
             </div>
         )

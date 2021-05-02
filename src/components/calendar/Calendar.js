@@ -12,7 +12,6 @@ class Calendar extends React.Component {
                 <FullCalendar 
                     ref={ this.calendarRef }
                     plugins={[ dayGridPlugin, interactionPlugin ]} 
-                    initialView="dayGridWeek"
 
                     events={[
                         {
